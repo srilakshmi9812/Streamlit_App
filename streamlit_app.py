@@ -9,5 +9,7 @@ st.title('Machine Learning App')
 
 st.info("This app builds Machine Learning Model")
 
-data = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_cleaned.csv")
-data
+with st.expander("Data"):
+  st.write("**Raw Data**")
+  data = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_cleaned.csv")
+
