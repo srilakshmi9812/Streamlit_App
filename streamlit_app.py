@@ -47,6 +47,13 @@ with st.sidebar:
   input_df = pd.DataFrame(data, index=[0])
   input_penguins = pd.concat([input_df, X], axis = 0)
   input_df
+
+with st.expander('Input Features'):
+  st.write('**Input Penguin Data**')
+  input_df
+  st.write('**Input Penguin Data Combined with Original Data**')
+  input_penguins
+
   
 #Data Preparation:  
 #Encode X
@@ -59,13 +66,14 @@ target_mapper = {'Adelie' : 0, 'Chinstrap': 1, 'Gentoo': 3}
 def target_encode(val):
   return target_mapper[val]
 y_encode = Y.apply(target_encode)
+
+with st.expander('Data Preparation'):
+  st.write('**Encoded X (Input Penguin)**')
+  df_penguins
+  st.write('**Encoded Y**')
+  y_encode
   
 
-with st.expander('Input Features'):
-  st.write('**Input Penguin Data**')
-  input_df
-  st.write('**Input Penguin Data Combined with Original Data**')
-  input_penguins
 
   
 
