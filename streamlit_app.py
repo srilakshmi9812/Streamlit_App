@@ -113,7 +113,7 @@ st.dataframe(df_prediction_proba,
                  )}, hide_index=True)
                  
 penguin_species = np.array(['Adelie', 'Chinstrap', 'Gentoo'])
-st.success(str[penguin_species[prediction][1]])
+st.success(str(penguin_species[prediction][0]))
   
 
 
