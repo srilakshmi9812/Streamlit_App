@@ -83,7 +83,6 @@ clf.fit(X_encode, y_encode)
 prediction = clf.predict(input_row)
 prediction_proba = clf.predict_proba(input_row)
 df_prediction_proba = pd.DataFrame(prediction_proba)
-df_prediction_proba
 df_prediction_proba.rename(columns = {0: 'Adelie', 1: 'Chinstrap', 2: 'Gentoo'})
 
 #Display Predicted Species
@@ -110,7 +109,7 @@ st.dataframe(df_prediction_proba,
                  width='medium',
                  min_value=0,
                  max_value=1,
-                 )}, hide_index=True)
+                 )})
                  
 penguin_species = np.array(['Adelie', 'Chinstrap', 'Gentoo'])
 st.success(str(penguin_species[prediction][0]))
