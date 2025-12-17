@@ -1,6 +1,13 @@
 import streamlit as st
+import numpy as np
+import pandas as pd
+import sklearn as sk
+import matplotlotlib.pyplot as plt
+
 
 st.title('Machine Learning App')
+
+st.info("This app builds Machine Learning Model")
 
 data = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_cleaned.csv")
 data
