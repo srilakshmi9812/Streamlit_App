@@ -19,5 +19,6 @@ X= data.drop("species", axis = 1)
 X
 
 st.write("### **Output, Y**")
-Y = data.species
+Y = data['species']
+Y
 
