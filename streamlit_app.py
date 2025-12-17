@@ -84,7 +84,7 @@ prediction = clf.predict(input_row)
 prediction_proba = clf.predict_proba(input_row)
 df_prediction_proba = pd.DataFrame(prediction_proba)
 df_prediction_proba
-df_preciction_proba.rename(columns = {0:'Adelie', 1:'Chinstrap', 2:'Gentoo'})
+df_preciction_proba.rename(columns = {0: 'Adelie', 1: 'Chinstrap', 2: 'Gentoo'})
 
 #Display Predicted Species
 st.subheader('Predicted Species')
