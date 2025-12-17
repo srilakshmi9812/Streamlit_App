@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import sklearn as sk
-import matplotlotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 
 st.title('Machine Learning App')
